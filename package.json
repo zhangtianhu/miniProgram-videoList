@@ -1,0 +1,32 @@
+{
+  "name": "mini-yifei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass2wxss": "npx gulp sass2wxss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzjalpaca/mini-yifei.git"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss-px2rpx": "^0.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzjalpaca/mini-yifei/issues"
+  },
+  "homepage": "https://github.com/zzjalpaca/mini-yifei#readme",
+  "dependencies": {
+    "vant-weapp": "^0.5.29"
+  }
+}

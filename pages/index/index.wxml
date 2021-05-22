@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>        
+  <van-button type="primary">默认按钮</van-button>
+  <button bindtap="getUserProfile"> 获取头像昵称 </button>
+</view>

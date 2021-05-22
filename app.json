@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/my"
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "/img/home.png",
+      "selectedIconPath": "/img/home-active.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/my/my",
+      "iconPath": "/img/guest.png",
+      "selectedIconPath": "/img/guest-active.png",
+      "text": "我的"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "van-button": "miniprogram_npm/vant-weapp/button/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}
