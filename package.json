@@ -1,7 +1,7 @@
 {
-  "name": "mini-yifei",
+  "name": "miniprogram",
   "version": "1.0.0",
-  "description": "",
+  "description": "```npm run sass2wxss```",
   "main": "app.js",
   "scripts": {
     "sass2wxss": "npx gulp sass2wxss"
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/zzjalpaca/mini-yifei#readme",
   "dependencies": {
+    "@vant/weapp": "^1.8.2",
     "vant-weapp": "^0.5.29"
   }
 }

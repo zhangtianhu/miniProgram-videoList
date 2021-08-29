@@ -1,0 +1,20 @@
+<view class="container">
+  <view class='video-item'>
+    <video class='video-video' id='video{{index}}' autoplay='{{true}}' show-center-play-btn="{{true}}"
+      src='{{videoURL}}'></video>
+    <!-- <image class='video-video2' wx:if='{{index!=videoIndex}}' mode='aspectFill' src='{{item.coverimg}}'></image> -->
+    <!-- <image class='videoPlay' wx:if='{{index!=videoIndex}}' data-index='{{index}}' bindtap='videoPlay'
+          src='/images/play.png'></image> -->
+    <view class='video-name'>video-name</view>
+    <view class='video-desc'>video-desc</view>
+  </view>
+  <view class="department">
+  <text>相关科室</text>
+  <image></image>
+  </view>
+  <view class="docotor">
+  <text>相关医生</text>
+  <image></image>
+  <view>描述</view>
+  </view>
+</view>

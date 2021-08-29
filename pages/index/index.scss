@@ -1,17 +1,15 @@
 .container {
-  .userinfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #aaa;
+  width: 100%;
+.department-container{
+  .department-item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   .department-describe{
+     font-size: 28rpx;
+     color: gray;
+   }
   }
-  
-  .userinfo-avatar {
-    overflow: hidden;
-    width: 128rpx;
-    height: 128rpx;
-    margin: 20rpx;
-    border-radius: 50%;
-  }
-
+}
 }

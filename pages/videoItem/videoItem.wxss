@@ -1,0 +1,1 @@
+.container .video-item{display:flex;flex-direction:column;align-items:center}.container .video-item .video-video{width:690rpx;height:400rpx}

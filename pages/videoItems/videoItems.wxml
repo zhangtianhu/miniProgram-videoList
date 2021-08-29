@@ -1,0 +1,21 @@
+<!--pages/my/my.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <van-tabs active="{{ active }}" bind:change="onChange" nav-class="tabs">
+    <van-tab title="专题">
+  <van-search value="{{ value }}" placeholder="请输入搜索专题" show-action bind:search="onSearch" bind:cancel="onCancel" />
+  <view>{{videoItems}}</view>
+  <view wx:for="{{topicList}}" wx:key="index">
+    <van-card id="{{item.id}}" desc="{{item.desc}}" title="{{item.title}}"
+      thumb="{{ item.imageURL }}" bindtap="selectItem">
+      <view class="items-footer" slot="price">
+      <view>{{item.data}}</view>
+        <view>播放{{item.playTime}}次</view>
+      </view>
+    </van-card>
+  </view>
+  </van-tab>
+  <van-tab title="科室">科室</van-tab>
+    <van-tab title="医生">医生</van-tab>
+  </van-tabs>
+</view>

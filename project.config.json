@@ -12,7 +12,7 @@
     "minified": true,
     "newFeature": false,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -30,6 +30,7 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -38,14 +39,14 @@
     "packNpmRelationList": [
       {
         "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./miniprogram/"
+        "miniprogramNpmDistDir": "./../xcx-demo"
       }
     ],
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.17.0",
-  "appid": "wx21790bca1191fb01",
+  "appid": "wx01fdb1dd0218d635",
   "projectname": "mini-yifei",
   "debugOptions": {
     "hidedInDevtools": []

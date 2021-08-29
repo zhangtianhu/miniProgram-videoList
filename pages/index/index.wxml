@@ -1,6 +1,36 @@
 <!--index.wxml-->
 <view class="container">
-  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>        
-  <van-button type="primary">默认按钮</van-button>
-  <button bindtap="getUserProfile"> 获取头像昵称 </button>
+  <van-tabs active="{{ active }}" bind:change="onChange" nav-class="tabs">
+    <van-tab title="专题">
+      <van-search value="{{ value }}" placeholder="请输入搜索专题" show-action bind:search="onSearch" bind:cancel="onCancel" />
+      <view wx:for="{{topicList}}" wx:key="index">
+        <van-card tag="共{{item.videoNum}}个视频" id="{{item.id}}" desc="{{item.desc}}" title="{{item.title}}"
+          thumb="{{ item.imageURL }}" bindtap="selectItems">
+          <view slot="price">
+            {{item.data}}
+          </view>
+        </van-card>
+      </view>
+    </van-tab>
+    <van-tab title="科室">
+      <van-search value="{{ value }}" placeholder="请输入搜索科室" show-action bind:search="onSearch" bind:cancel="onCancel" />
+      <view class="department-container">
+        <van-row gutter="20">
+          <van-col span="12">
+            <view class="department-item"  bindtap="selectItems">
+              <van-image width="120" height="100" lazy-load src="https://img.yzcdn.cn/vant/cat.jpeg" />
+              <view class="department-describe">xxxx科室</view>
+            </view>
+          </van-col>
+          <van-col span="12">
+            <view class="department-item">
+              <van-image width="120" height="100" lazy-load src="https://img.yzcdn.cn/vant/cat.jpeg" />
+              <view class="department-describe">xxxx科室</view>
+            </view>
+          </van-col>
+        </van-row>
+      </view>
+    </van-tab>
+    <van-tab title="标题3">内容 3</van-tab>
+  </van-tabs>
 </view>
